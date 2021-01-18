@@ -1,6 +1,8 @@
 import elker from './images/elker-project.jpeg';
 import plexa from './images/plexa-project.jpeg';
 import speedbot from './images/speedbot-project.jpeg';
+import grafiq from './images/grafiq-project.jpeg';
+import harvester from './images/harvester-project.jpeg';
 
 export default function Portfolio() {
   return (
@@ -16,6 +18,7 @@ export default function Portfolio() {
               <span>
                 <span className="badge bg-primary mx-2">Vue.js</span>
                 <span className="badge bg-success">Ruby on Rails</span>
+                <span className="badge bg-warning text-dark mx-2">Vuex</span>
               </span>
             </p>
           </div>
@@ -31,8 +34,9 @@ export default function Portfolio() {
               <a href='https://app.sitespeedbot.com/' target="_blank" rel="noopener noreferrer">https://app.sitespeedbot.com/</a>
 
               <span>
-                <span className="badge bg-success mx-2">Ruby on Rails</span>
-                <span className="badge bg-info mx-2">React</span>
+                <span className="badge bg-success mx-1">Ruby on Rails</span>
+                <span className="badge bg-primary mx-1">React</span>
+                <span className="badge bg-warning text-dark mx-1">Redux</span>
                 <span className="badge bg-secondary">Jquery</span>
               </span>
             </p>
@@ -57,6 +61,43 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+      <div className="col">
+        <div className="card">
+          <img src={grafiq} className="card-img-top" alt="Grafiq project" />
+          <div className="card-body">
+            <h5 className="card-title">Grafiq</h5>
+            <p className="card-text d-flex flex-column">
+              <span>A map of graph connections about family violence perpetrator pathways in Australia</span>
+              <a href='https://grafiq.herokuapp.com/' target="_blank" rel="noopener noreferrer">https://grafiq.herokuapp.com/</a>
+
+              <span>
+                <span className="badge bg-success">Ruby on Rails</span>
+                <span className="badge bg-primary mx-2">Vue.js</span>
+                <span className="badge bg-warning text-dark">Vuex</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="card">
+          <img src={harvester} className="card-img-top" alt="Harvester project" />
+          <div className="card-body">
+            <h5 className="card-title">Harvester</h5>
+            <p className="card-text d-flex flex-column">
+              <span>Crawling reviews from Facebook, Google, Tripadvisor</span>
+              <a href='https://h.reviewpilot.net/' target="_blank" rel="noopener noreferrer">https://h.reviewpilot.net/</a>
+
+              <span>
+                <span className="badge bg-success">Ruby on Rails</span>
+                <span className="badge bg-primary mx-2">Node.js</span>
+                <span className="badge bg-warning text-dark">Puppeteer</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
     </div>
   )
 }
