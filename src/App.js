@@ -6,7 +6,7 @@ import Portfolio from './Portfolio'
 import Summary from './Summary'
 import Contacts from './Contacts'
 
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, HashRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
