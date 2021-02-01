@@ -37,6 +37,8 @@ export default function Portfolio() {
                 <span className="badge bg-success mx-1">Ruby on Rails</span>
                 <span className="badge bg-primary mx-1">React</span>
                 <span className="badge bg-warning text-dark mx-1">Redux</span>
+                <span className="badge bg-primary mx-1">Docker</span>
+                <span className="badge bg-primary mx-1">Bash</span>
                 <span className="badge bg-secondary">Jquery</span>
               </span>
             </p>
