@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca17e208.chunk.css",
-    "main.js": "/static/js/main.45d8b130.chunk.js",
-    "main.js.map": "/static/js/main.45d8b130.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e23fbcdb.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e23fbcdb.js.map",
-    "static/css/2.8127792a.chunk.css": "/static/css/2.8127792a.chunk.css",
-    "static/js/2.18abd9ea.chunk.js": "/static/js/2.18abd9ea.chunk.js",
-    "static/js/2.18abd9ea.chunk.js.map": "/static/js/2.18abd9ea.chunk.js.map",
-    "static/js/3.6c5e0e47.chunk.js": "/static/js/3.6c5e0e47.chunk.js",
-    "static/js/3.6c5e0e47.chunk.js.map": "/static/js/3.6c5e0e47.chunk.js.map",
+    "main.css": "/static/css/main.422b53ea.chunk.css",
+    "main.js": "/static/js/main.9e15b93d.chunk.js",
+    "main.js.map": "/static/js/main.9e15b93d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.61fbf532.js",
+    "runtime-main.js.map": "/static/js/runtime-main.61fbf532.js.map",
+    "static/css/2.58dcbf32.chunk.css": "/static/css/2.58dcbf32.chunk.css",
+    "static/js/2.e42355a6.chunk.js": "/static/js/2.e42355a6.chunk.js",
+    "static/js/2.e42355a6.chunk.js.map": "/static/js/2.e42355a6.chunk.js.map",
+    "static/js/3.fa83ef34.chunk.js": "/static/js/3.fa83ef34.chunk.js",
+    "static/js/3.fa83ef34.chunk.js.map": "/static/js/3.fa83ef34.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/2.8127792a.chunk.css.map": "/static/css/2.8127792a.chunk.css.map",
-    "static/css/main.ca17e208.chunk.css.map": "/static/css/main.ca17e208.chunk.css.map",
-    "static/js/2.18abd9ea.chunk.js.LICENSE.txt": "/static/js/2.18abd9ea.chunk.js.LICENSE.txt",
+    "static/css/2.58dcbf32.chunk.css.map": "/static/css/2.58dcbf32.chunk.css.map",
+    "static/css/main.422b53ea.chunk.css.map": "/static/css/main.422b53ea.chunk.css.map",
+    "static/js/2.e42355a6.chunk.js.LICENSE.txt": "/static/js/2.e42355a6.chunk.js.LICENSE.txt",
     "static/media/elker-project.8254fb1b.jpeg": "/static/media/elker-project.8254fb1b.jpeg",
     "static/media/grafiq-project.121b0948.jpeg": "/static/media/grafiq-project.121b0948.jpeg",
     "static/media/harvester-project.20ad3fe2.jpeg": "/static/media/harvester-project.20ad3fe2.jpeg",
@@ -22,10 +22,10 @@
     "static/media/speedbot-project.521c4b4e.jpeg": "/static/media/speedbot-project.521c4b4e.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e23fbcdb.js",
-    "static/css/2.8127792a.chunk.css",
-    "static/js/2.18abd9ea.chunk.js",
-    "static/css/main.ca17e208.chunk.css",
-    "static/js/main.45d8b130.chunk.js"
+    "static/js/runtime-main.61fbf532.js",
+    "static/css/2.58dcbf32.chunk.css",
+    "static/js/2.e42355a6.chunk.js",
+    "static/css/main.422b53ea.chunk.css",
+    "static/js/main.9e15b93d.chunk.js"
   ]
 }
