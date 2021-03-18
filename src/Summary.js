@@ -33,7 +33,7 @@ markups)</p>
       </p>
       <h3>Certificates</h3>
       <p>
-        <span style={{ display: 'block'}}>HackerRank - March 2020</span>
+        <span style={{ display: 'block'}}>HackerRank - March 2021</span>
         <a href="https://www.hackerrank.com/certificates/cd453396c5a2" target="_blank" rel="noopener noreferrer">Rest API (Intermediate) Certificate</a>
       </p>
        <p>
