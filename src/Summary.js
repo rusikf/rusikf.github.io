@@ -33,6 +33,10 @@ markups)</p>
       </p>
       <h3>Certificates</h3>
       <p>
+        <span style={{ display: 'block'}}>HackerRank - March 2020</span>
+        <a href="https://www.hackerrank.com/certificates/cd453396c5a2" target="_blank" rel="noopener noreferrer">Rest API (Intermediate) Certificate</a>
+      </p>
+       <p>
         <span style={{ display: 'block'}}>FreeCodeCamp - February 2021</span>
         <a href="https://www.freecodecamp.org/certification/fcc49ceb0e6-b33e-4d74-8314-e27aa65db621/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">JavaScript Algorithms and Data Structures</a>
       </p>
