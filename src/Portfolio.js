@@ -56,8 +56,9 @@ export default function Portfolio() {
 
               <span>
                 <span className="badge bg-success">Ruby on Rails</span>
+                <span className="badge bg-primary mx-1">React Native</span>
+                <span className="badge bg-warning text-dark mx-1">Redux</span>
                 <span className="badge bg-secondary mx-2">Jquery</span>
-                <span className="badge bg-light text-dark">Coffescript</span>
               </span>
             </p>
           </div>
@@ -99,7 +100,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      
+
     </div>
   )
 }

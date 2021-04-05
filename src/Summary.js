@@ -52,37 +52,36 @@ export default function Summary() {
       <div className="col-md-4 offset-md-4 text-start">
       <h2><u>Work Experience</u></h2>
       <div>
-        <h4>Full-stack web developer</h4>
+        <h4>Full-stack web developer (Ruby, Javascript)</h4>
         <p>Kodolabs - Remote - Since May 2016</p>
-          <p>Full-stack developer with Ruby on Rails experience
-            with strong knowledge
-          in React, Vue and legacy jQuery and pure Javascript code</p><p>
-          Participated in developing multiple startups from scratch to production.
-          Features: Messaging API, Social media feed, complex filtering, Step builder on Vue.js,
-          Postgres speed optimization, React.js filters, and management, etc.
+        <p style={{ whiteSpace: 'pre-wrap' }}>
+          {`Increased API performance up to 30%.
+Tested, coded, reviewed, and delivered architecture on the backend and frontend for production use.
+Features: Messaging API, Social media feed, Content Filtering, Step builder on Vue.js, SQL speed optimization, React.js filters, Group managment on React Native, etc.
+Developed translation feature through Google speech recognition API in 2 weeks.
+          `}
           </p>
       </div>
       <div>
         <h4>Ruby Backend Developer</h4>
         <p>IMBS - Moscow, Russia - From June 2014 to May 2016
-          Billing API integration + dashboard. FFmpeg video processing.
+          Developed video conversation with FFmpeg which has been used in 7+ projects.
         </p>
       </div>
       <div>
         <h4>Junior Ruby developer</h4>
         <p>My course - Moscow - From January 2014 to June 2014</p>
-        <p>Developed webinar platform from scratch ( backbone.js + rails + HTML
-markups)</p>
+        <p>Developed webinar platform from scratch in tight deadlines.</p>
       </div>
 
       <h2><u>Education</u></h2>
-      <p>Mechanical engineering
-      Moscow state university of mechanical engineering (MAMI) - Moscow
+      <p>Mechanical Engineering ( Engineer’s Degree )<br></br>
+      Moscow state university of mechanical engineering, Moscow
       </p>
       <h3>Certificates</h3>
       {
         certificates.map(( { title, link, organization }) => {
-          return <p>
+          return <p key={title}>
             <span style={{ display: 'block'}}>{ organization }</span>
             <a href={ link } target="_blank" rel="noopener noreferrer">{ title }</a>
           </p>
