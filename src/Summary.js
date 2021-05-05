@@ -1,6 +1,12 @@
 export default function Summary() {
   const certificates = [
     {
+      title: 'JavaScript (Intermediate) Certificate',
+      link: 'https://www.hackerrank.com/certificates/52ab00a834bf',
+      organization: 'HackerRank - May 2021'
+    },
+
+    {
       title: 'CSS Certificate',
       link: 'https://www.hackerrank.com/certificates/dfe091545ea4',
       organization: 'HackerRank - April 2021'
