@@ -1,6 +1,11 @@
 export default function Summary() {
   const certificates = [
     {
+      title: 'Back End Development and APIs (Node, Express, MongoDB) Certificate',
+      link: 'https://www.freecodecamp.org/certification/fcc49ceb0e6-b33e-4d74-8314-e27aa65db621/back-end-development-and-apis',
+      organization: 'FreeCodeCamp - September 2021'
+    },
+    {
       title: 'JavaScript (Intermediate) Certificate',
       link: 'https://www.hackerrank.com/certificates/52ab00a834bf',
       organization: 'HackerRank - May 2021'
