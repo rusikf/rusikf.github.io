@@ -1,6 +1,11 @@
 export default function Summary() {
   const certificates = [
     {
+      title: 'SQL (Basic) Certificate',
+      link: 'https://www.hackerrank.com/certificates/5325f670d03c',
+      organization: 'HackerRank - January 2022'
+    },
+    {
       title: 'Back End Development and APIs (Node, Express, MongoDB) Certificate',
       link: 'https://www.freecodecamp.org/certification/fcc49ceb0e6-b33e-4d74-8314-e27aa65db621/back-end-development-and-apis',
       organization: 'FreeCodeCamp - September 2021'
@@ -68,7 +73,7 @@ export default function Summary() {
         <p style={{ whiteSpace: 'pre-wrap' }}>
           {`Increased API performance up to 30%.
 Tested, coded, reviewed, and delivered architecture on the backend and frontend for production use.
-Features: Messaging API, Social media feed, Content Filtering, Step builder on Vue.js, SQL speed optimization, React.js filters, Group managment on React Native, etc.
+Features: Messaging API, Social media feed, Content Filtering, Step builder on Vue.js, SQL speed optimization, React.js filters, Group management on React Native, etc.
 Developed translation feature through Google speech recognition API in 2 weeks.
           `}
           </p>
