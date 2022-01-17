@@ -10,7 +10,7 @@ export default function About() {
         </p>
 
         <small>
-          Work-life balance and new technicall challenges is an important part of my life, that's why I love remote work, which helps me be productive with tools like Toggle, Pivotal Tracker, etc.
+        The ability to learn new things with a mix of good work-life balance is part of the daily routine, that's why I love remote work, which helps me be productive with tools like Toggle, Pivotal Tracker, etc.
         </small>
         </div>
       <div className='col-12 col-sm-6'>
