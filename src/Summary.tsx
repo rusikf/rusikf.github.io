@@ -1,5 +1,11 @@
+interface Certificate {
+  title: string;
+  link: string;
+  organization: string;
+}
+
 export default function Summary() {
-  const certificates = [
+  const certificates: Certificate[] = [
     {
       title: 'TypeScript Essential Training',
       link: 'https://www.linkedin.com/learning/certificates/e31c8df4736e6b90bb020c36f9dd009acdc95e5c484a64a42b78404653911cd3?trk=share_certificate',
@@ -95,7 +101,7 @@ export default function Summary() {
       </p>
       <h3>Certificates</h3>
       {
-        certificates.map(( { title, link, organization }) => {
+        certificates.map(( { title, link, organization }: Certificate) => {
           return <p key={title}>
             <span style={{ display: 'block'}}>{ organization }</span>
             <a href={ link } target="_blank" rel="noopener noreferrer">{ title }</a>

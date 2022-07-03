@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom'
 export default function Navbar() {
   const { pathname } = useLocation()
 
-  const navLinkClass = (routeTarget) => {
+  const navLinkClass = (routeTarget: string) => {
     return routeTarget === pathname ? 'active nav-link' : 'nav-link'
   }
 
