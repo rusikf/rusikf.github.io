@@ -1,12 +1,12 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 import Navbar from './Navbar'
 import About from './About'
 import Portfolio from './Portfolio'
 import Summary from './Summary'
 import Contacts from './Contacts'
 
-import { Route, Switch, HashRouter as Router } from 'react-router-dom'
+import { Route, Routes, HashRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
@@ -15,23 +15,19 @@ function App() {
         <Router>
           <Navbar />
 
-          <Switch>
-            <Route exact path="/">
-              <About />
-            </Route>
-            
-            <Route path="/portfolio">
-              <Portfolio />
+          <Routes>
+            <Route path="/" element={<About />}>
             </Route>
 
-            <Route path="/summary">
-              <Summary />
+            <Route path="/portfolio" element={<Portfolio />}>
             </Route>
 
-            <Route path="/contacts">
-              <Contacts />
+            <Route path="/summary" element={<Summary />}>
             </Route>
-          </Switch>
+
+            <Route path="/contacts" element={<Contacts />}>
+            </Route>
+          </Routes>
         </Router>
       </div>
     </div>

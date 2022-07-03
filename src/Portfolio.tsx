@@ -3,10 +3,28 @@ import plexa from './images/plexa-project.jpeg';
 import speedbot from './images/speedbot-project.jpeg';
 import grafiq from './images/grafiq-project.jpeg';
 import harvester from './images/harvester-project.jpeg';
-
+import adoptech from './images/adoptech-project.png'
 export default function Portfolio() {
   return (
+    <>
     <div className="row py-5 row-cols-1 row-cols-md-3 g-4">
+    <div className="col">
+        <div className="card">
+          <img src={adoptech} className="card-img-top" alt="Adoptech project" />
+          <div className="card-body">
+            <h5 className="card-title">Adoptech</h5>
+            <p className="card-text d-flex flex-column">
+              <span>Policies and Agreements for your business.</span>
+              <a href='https://adoptech.co.uk/' target="_blank" rel="noopener noreferrer">https://adoptech.co.uk/</a>
+              <span>
+                <span className="badge bg-info mx-2">Typescript</span>
+                <span className="badge bg-success">React</span>
+                <span className="badge bg-warning text-dark mx-2">Ruby on Rails</span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="col">
         <div className="card">
           <img src={elker} className="card-img-top" alt="Elker project" />
@@ -102,5 +120,6 @@ export default function Portfolio() {
       </div>
 
     </div>
+    </>
   )
 }

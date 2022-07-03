@@ -1,5 +1,16 @@
+interface Certificate {
+  title: string;
+  link: string;
+  organization: string;
+}
+
 export default function Summary() {
-  const certificates = [
+  const certificates: Certificate[] = [
+    {
+      title: 'TypeScript Essential Training',
+      link: 'https://www.linkedin.com/learning/certificates/e31c8df4736e6b90bb020c36f9dd009acdc95e5c484a64a42b78404653911cd3?trk=share_certificate',
+      organization: 'LinkedIn Learning - July 2022'
+    },
     {
       title: 'SQL (Basic) Certificate',
       link: 'https://www.hackerrank.com/certificates/5325f670d03c',
@@ -68,26 +79,20 @@ export default function Summary() {
       <div className="col-md-4 offset-md-4 text-start">
       <h2><u>Work Experience</u></h2>
       <div>
-        <h4>Full-stack web developer (Ruby, Javascript)</h4>
-        <p>Kodolabs - Remote - Since May 2016</p>
-        <p style={{ whiteSpace: 'pre-wrap' }}>
-          {`Increased API performance up to 30%.
-Tested, coded, reviewed, and delivered architecture on the backend and frontend for production use.
-Features: Messaging API, Social media feed, Content Filtering, Step builder on Vue.js, SQL speed optimization, React.js filters, Group management on React Native, etc.
-Developed translation feature through Google speech recognition API in 2 weeks.
-          `}
-          </p>
+        <h4>Full-stack web developer (Frontend Focus: Typescript/Javascript, Ruby)</h4>
+        <p>Adoptech - Remote - Since March 2022</p>
+      </div>
+      <div>
+        <h4>Full-stack web developer (Backend Focus: Ruby, Javascript)</h4>
+        <p>Kodolabs - Remote - From May 2016 to February 2022</p>
       </div>
       <div>
         <h4>Ruby Backend Developer</h4>
-        <p>IMBS - Moscow, Russia - From June 2014 to May 2016
-          Developed video conversation with FFmpeg which has been used in 7+ projects.
-        </p>
+        <p>IMBS - Moscow, Russia - From June 2014 to May 2016</p>
       </div>
       <div>
         <h4>Junior Ruby developer</h4>
         <p>My course - Moscow - From January 2014 to June 2014</p>
-        <p>Developed webinar platform from scratch in tight deadlines.</p>
       </div>
 
       <h2><u>Education</u></h2>
@@ -96,7 +101,7 @@ Developed translation feature through Google speech recognition API in 2 weeks.
       </p>
       <h3>Certificates</h3>
       {
-        certificates.map(( { title, link, organization }) => {
+        certificates.map(( { title, link, organization }: Certificate) => {
           return <p key={title}>
             <span style={{ display: 'block'}}>{ organization }</span>
             <a href={ link } target="_blank" rel="noopener noreferrer">{ title }</a>
