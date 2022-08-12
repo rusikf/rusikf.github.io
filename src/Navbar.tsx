@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link className={navLinkClass('/portfolio')} to="/portfolio"><span>Portfolio</span></Link>
       </li>
       <li className="nav-item">
-        <Link className={navLinkClass('/summary')} to="/summary"><span>Work experience & Education</span></Link>
+        <Link className={navLinkClass('/experience')} to="/experience"><span>Work experience & Education</span></Link>
       </li>
       <li className="nav-item">
         <Link className={navLinkClass('/contacts')} to="/contacts"><span>Contacts</span></Link>
