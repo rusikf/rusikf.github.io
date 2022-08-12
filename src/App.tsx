@@ -3,10 +3,10 @@ import './App.css';
 import Navbar from './Navbar'
 import About from './About'
 import Portfolio from './Portfolio'
-import Summary from './Summary'
 import Contacts from './Contacts'
 
 import { Route, Routes, HashRouter as Router } from 'react-router-dom'
+import Experience from './Experience';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />}>
             </Route>
 
-            <Route path="/summary" element={<Summary />}>
+            <Route path="/experience" element={<Experience />}>
             </Route>
 
             <Route path="/contacts" element={<Contacts />}>

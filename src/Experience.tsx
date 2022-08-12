@@ -4,12 +4,17 @@ interface Certificate {
   organization: string;
 }
 
-export default function Summary() {
+export default function Experience() {
   const certificates: Certificate[] = [
+    {
+      title: 'Programming Foundations: Algorithms',
+      link: 'https://www.linkedin.com/learning/certificates/252781d0c3c0bc622b43f4ee23f3ca476bc24731fc47d5d31eebaa4afab8793c?trk=share_certificate',
+      organization: 'LinkedIn Learning - July 2022'
+    },
     {
       title: 'TypeScript Essential Training',
       link: 'https://www.linkedin.com/learning/certificates/e31c8df4736e6b90bb020c36f9dd009acdc95e5c484a64a42b78404653911cd3?trk=share_certificate',
-      organization: 'LinkedIn Learning - July 2022'
+      organization: 'LinkedIn Learning - June 2022'
     },
     {
       title: 'SQL (Basic) Certificate',
@@ -88,16 +93,16 @@ export default function Summary() {
       </div>
       <div>
         <h4>Ruby Backend Developer</h4>
-        <p>IMBS - Moscow, Russia - From June 2014 to May 2016</p>
+        <p>IMBS - Onsite- From June 2014 to May 2016</p>
       </div>
       <div>
         <h4>Junior Ruby developer</h4>
-        <p>My course - Moscow - From January 2014 to June 2014</p>
+        <p>My course - Onsite - From January 2014 to June 2014</p>
       </div>
 
       <h2><u>Education</u></h2>
       <p>Mechanical Engineering ( Engineer’s Degree )<br></br>
-      Moscow state university of mechanical engineering, Moscow
+      Moscow state university of mechanical engineering
       </p>
       <h3>Certificates</h3>
       {
