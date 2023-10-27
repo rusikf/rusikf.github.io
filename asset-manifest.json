@@ -1,31 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6e017aa.chunk.css",
-    "main.js": "/static/js/main.10add213.chunk.js",
-    "main.js.map": "/static/js/main.10add213.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.61fbf532.js",
-    "runtime-main.js.map": "/static/js/runtime-main.61fbf532.js.map",
-    "static/css/2.f7c01a3b.chunk.css": "/static/css/2.f7c01a3b.chunk.css",
-    "static/js/2.e42355a6.chunk.js": "/static/js/2.e42355a6.chunk.js",
-    "static/js/2.e42355a6.chunk.js.map": "/static/js/2.e42355a6.chunk.js.map",
-    "static/js/3.fa83ef34.chunk.js": "/static/js/3.fa83ef34.chunk.js",
-    "static/js/3.fa83ef34.chunk.js.map": "/static/js/3.fa83ef34.chunk.js.map",
+    "main.css": "/static/css/main.32c3c5db.css",
+    "main.js": "/static/js/main.d93d08c9.js",
+    "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
+    "static/media/harvester-project.jpeg": "/static/media/harvester-project.20ad3fe25f92041e2389.jpeg",
+    "static/media/adoptech-project.png": "/static/media/adoptech-project.dc94f88a0c6a1be55bea.png",
+    "static/media/speedbot-project.jpeg": "/static/media/speedbot-project.521c4b4eee98422f880a.jpeg",
+    "static/media/elker-project.jpeg": "/static/media/elker-project.8254fb1bb6bb1987932c.jpeg",
+    "static/media/grafiq-project.jpeg": "/static/media/grafiq-project.121b094816a7e8d2ead5.jpeg",
+    "static/media/me.jpeg": "/static/media/me.458bb5d4908fb5dd8cee.jpeg",
+    "static/media/plexa-project.jpeg": "/static/media/plexa-project.a2978bf7bf9feca85beb.jpeg",
     "index.html": "/index.html",
-    "static/css/2.f7c01a3b.chunk.css.map": "/static/css/2.f7c01a3b.chunk.css.map",
-    "static/css/main.f6e017aa.chunk.css.map": "/static/css/main.f6e017aa.chunk.css.map",
-    "static/js/2.e42355a6.chunk.js.LICENSE.txt": "/static/js/2.e42355a6.chunk.js.LICENSE.txt",
-    "static/media/elker-project.8254fb1b.jpeg": "/static/media/elker-project.8254fb1b.jpeg",
-    "static/media/grafiq-project.121b0948.jpeg": "/static/media/grafiq-project.121b0948.jpeg",
-    "static/media/harvester-project.20ad3fe2.jpeg": "/static/media/harvester-project.20ad3fe2.jpeg",
-    "static/media/me.458bb5d4.jpeg": "/static/media/me.458bb5d4.jpeg",
-    "static/media/plexa-project.a2978bf7.jpeg": "/static/media/plexa-project.a2978bf7.jpeg",
-    "static/media/speedbot-project.521c4b4e.jpeg": "/static/media/speedbot-project.521c4b4e.jpeg"
+    "main.32c3c5db.css.map": "/static/css/main.32c3c5db.css.map",
+    "main.d93d08c9.js.map": "/static/js/main.d93d08c9.js.map",
+    "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.61fbf532.js",
-    "static/css/2.f7c01a3b.chunk.css",
-    "static/js/2.e42355a6.chunk.js",
-    "static/css/main.f6e017aa.chunk.css",
-    "static/js/main.10add213.chunk.js"
+    "static/css/main.32c3c5db.css",
+    "static/js/main.d93d08c9.js"
   ]
 }
