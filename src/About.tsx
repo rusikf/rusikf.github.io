@@ -5,12 +5,16 @@ export default function About() {
     <div className="row description-block align-items-center">
       <div className='text-md-start col-12 col-sm-6 d-flex flex-column'>
         <p className='lead'>
-          Hi! I am Ruslan Coroliov.
-          Full-stack web developer with experience in the backend: Ruby ( Ruby on Rails ) and frontend: Typescript/Javascript (React, Vue, Plain JS)
+        Hi there! 👋
+        </p>
+        <p>
+        I'm Ruslan Coroliov, a passionate Software Engineer from Moldova. 🧑‍🌾 ( real, not AI 🤖 )
+        </p>
+        <p>A full-stack web developer proficient in Ruby (Ruby on Rails) for the backend and Typescript/Javascript (React, Vue, Plain JS) for the front end.
         </p>
 
         <small>
-        The ability to learn new things with a mix of good work-life balance is part of the daily routine, that's why I love remote work, which helps me be productive!
+        As a remote work enthusiast, I thrive on learning new tech while maintaining a healthy work-life balance, ensuring productivity and innovation go hand in hand in every daily task.
         </small>
         </div>
       <div className='col-12 col-sm-6'>

@@ -7,6 +7,16 @@ interface Certificate {
 export default function Experience() {
   const certificates: Certificate[] = [
     {
+      title: 'The EF Standard English Test (EF SET)  | C1 - Advanced',
+      link: 'https://www.efset.org/cert/d26oJm',
+      organization: 'EF Education First - October 2023'
+    },
+    {
+      title: 'CS50x (Computer Science)',
+      link: 'https://certificates.cs50.io/ad55c6c1-4393-4659-93f8-4f69f5dfdbff.pdf',
+      organization: 'Harvard University - September 2023'
+    },
+    {
       title: 'Programming Foundations: Algorithms',
       link: 'https://www.linkedin.com/learning/certificates/252781d0c3c0bc622b43f4ee23f3ca476bc24731fc47d5d31eebaa4afab8793c?trk=share_certificate',
       organization: 'LinkedIn Learning - July 2022'
@@ -72,11 +82,7 @@ export default function Experience() {
       link: 'https://www.freecodecamp.org/certification/fcc49ceb0e6-b33e-4d74-8314-e27aa65db621/front-end-libraries',
       organization: 'FreeCodeCamp - 2020'
     },
-    {
-      title: 'EF Standard English Test ( EF SET ) | Intermediate',
-      link: 'https://www.efset.org/cert/vbxnWV',
-      organization: 'EFSET - 2020'
-    }
+
   ]
 
   return (

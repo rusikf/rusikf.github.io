@@ -1,11 +1,12 @@
 export default function Contacts() {
+  const email = 'ruslan.coroliov+3@outlook.com';
   return (
     <div className="my-4">
       <p>
-        <a href="mailto: 19r2mctrg@mozmail.com">Send Email to me!</a>
+        <a href={`mailto:${email}`}>Email</a>
       </p>
 
-      <a href="https://www.linkedin.com/in/ruslan-korolev/" target="_blank" rel="noopener noreferrer">Send a message on LinkedIn</a>
+      <a href="https://www.linkedin.com/in/ruslan-coroliov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   )
 }
