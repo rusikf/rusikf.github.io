@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.32c3c5db.css",
-    "main.js": "/static/js/main.d93d08c9.js",
+    "main.js": "/static/js/main.1fbb5a7f.js",
     "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
     "static/media/harvester-project.jpeg": "/static/media/harvester-project.20ad3fe25f92041e2389.jpeg",
     "static/media/adoptech-project.png": "/static/media/adoptech-project.dc94f88a0c6a1be55bea.png",
@@ -12,11 +12,11 @@
     "static/media/plexa-project.jpeg": "/static/media/plexa-project.a2978bf7bf9feca85beb.jpeg",
     "index.html": "/index.html",
     "main.32c3c5db.css.map": "/static/css/main.32c3c5db.css.map",
-    "main.d93d08c9.js.map": "/static/js/main.d93d08c9.js.map",
+    "main.1fbb5a7f.js.map": "/static/js/main.1fbb5a7f.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32c3c5db.css",
-    "static/js/main.d93d08c9.js"
+    "static/js/main.1fbb5a7f.js"
   ]
 }
