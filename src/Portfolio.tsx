@@ -3,123 +3,173 @@ import plexa from './images/plexa-project.jpeg';
 import speedbot from './images/speedbot-project.jpeg';
 import grafiq from './images/grafiq-project.jpeg';
 import harvester from './images/harvester-project.jpeg';
-import adoptech from './images/adoptech-project.png'
-export default function Portfolio() {
+import adoptech from './images/adoptech-project.png';
+import { Badge, Modal, ModalHeader, ModalBody } from 'flowbite-react';
+import { useState } from 'react';
+
+interface Project {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+  technologies: Array<{
+    name: string;
+    color: "info" | "success" | "warning" | "gray";
+  }>;
+}
+
+const projects: Project[] = [
+  {
+    id: 'adoptech',
+    title: 'Adoptech',
+    description: 'Policies and Agreements for your business.',
+    image: adoptech,
+    url: 'https://adoptech.co.uk/',
+    technologies: [
+      { name: 'Typescript', color: 'info' },
+      { name: 'React', color: 'success' },
+      { name: 'Ruby on Rails', color: 'warning' }
+    ]
+  },
+  {
+    id: 'elker',
+    title: 'Elker',
+    description: 'A platform for sending anonymous reports and feedbacks',
+    image: elker,
+    url: 'https://elker.com',
+    technologies: [
+      { name: 'Vue.js', color: 'info' },
+      { name: 'Ruby on Rails', color: 'success' },
+      { name: 'Vuex', color: 'warning' }
+    ]
+  },
+  {
+    id: 'speedbot',
+    title: 'Site Speed Bot',
+    description: 'SEO tool for test load speed of any website',
+    image: speedbot,
+    url: 'https://app.sitespeedbot.com/',
+    technologies: [
+      { name: 'Ruby on Rails', color: 'success' },
+      { name: 'React', color: 'info' },
+      { name: 'Redux', color: 'warning' },
+      { name: 'Docker', color: 'info' },
+      { name: 'Bash', color: 'info' },
+      { name: 'Jquery', color: 'gray' }
+    ]
+  },
+  {
+    id: 'plexa',
+    title: 'Plexa',
+    description: 'A social network for doctors and patients',
+    image: plexa,
+    url: 'https://plexa.ai',
+    technologies: [
+      { name: 'Ruby on Rails', color: 'success' },
+      { name: 'React Native', color: 'info' },
+      { name: 'Redux', color: 'warning' },
+      { name: 'Jquery', color: 'gray' }
+    ]
+  },
+  {
+    id: 'grafiq',
+    title: 'Grafiq',
+    description: 'A map of graph connections about family violence perpetrator pathways in Australia',
+    image: grafiq,
+    url: 'https://grafiq.herokuapp.com/',
+    technologies: [
+      { name: 'Ruby on Rails', color: 'success' },
+      { name: 'Vue.js', color: 'info' },
+      { name: 'Vuex', color: 'warning' }
+    ]
+  },
+  {
+    id: 'harvester',
+    title: 'Harvester',
+    description: 'A platform for farmers to sell their products directly to consumers',
+    image: harvester,
+    url: 'https://harvester.com',
+    technologies: [
+      { name: 'Ruby on Rails', color: 'success' },
+      { name: 'React', color: 'info' },
+      { name: 'Redux', color: 'warning' }
+    ]
+  }
+];
+
+export const Portfolio = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+  const [selectedTitle, setSelectedTitle] = useState('');
+
+  const openModal = (image: string, title: string) => {
+    setSelectedImage(image);
+    setSelectedTitle(title);
+    setShowModal(true);
+  };
+
   return (
-    <>
-    <div className="row py-5 row-cols-1 row-cols-md-3 g-4">
-    <div className="col">
-        <div className="card">
-          <img src={adoptech} className="card-img-top" alt="Adoptech project" />
-          <div className="card-body">
-            <h5 className="card-title">Adoptech</h5>
-            <p className="card-text d-flex flex-column">
-              <span>Policies and Agreements for your business.</span>
-              <a href='https://adoptech.co.uk/' target="_blank" rel="noopener noreferrer">https://adoptech.co.uk/</a>
-              <span>
-                <span className="badge bg-info mx-2">Typescript</span>
-                <span className="badge bg-success">React</span>
-                <span className="badge bg-warning text-dark mx-2">Ruby on Rails</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card">
-          <img src={elker} className="card-img-top" alt="Elker project" />
-          <div className="card-body">
-            <h5 className="card-title">Elker</h5>
-            <p className="card-text d-flex flex-column">
-              <span>A platform for sending anonymous reports and feedbacks</span>
-              <a href='https://elker.com' target="_blank" rel="noopener noreferrer">https://elker.com</a>
-              <span>
-                <span className="badge bg-primary mx-2">Vue.js</span>
-                <span className="badge bg-success">Ruby on Rails</span>
-                <span className="badge bg-warning text-dark mx-2">Vuex</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card">
-          <img src={speedbot} className="card-img-top" alt="Site Speed Bot project" />
-          <div className="card-body">
-            <h5 className="card-title">Site Speed Bot</h5>
-            <p className="card-text d-flex flex-column">
-              <span>SEO tool for test load speed of any website</span>
-              <a href='https://app.sitespeedbot.com/' target="_blank" rel="noopener noreferrer">https://app.sitespeedbot.com/</a>
+    <div className="min-h-screen w-full px-4 py-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-3xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+          Portfolio
+        </h1>
 
-              <span>
-                <span className="badge bg-success mx-1">Ruby on Rails</span>
-                <span className="badge bg-primary mx-1">React</span>
-                <span className="badge bg-warning text-dark mx-1">Redux</span>
-                <span className="badge bg-primary mx-1">Docker</span>
-                <span className="badge bg-primary mx-1">Bash</span>
-                <span className="badge bg-secondary">Jquery</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card">
-          <img src={plexa} className="card-img-top" alt="Plexa project" />
-          <div className="card-body">
-            <h5 className="card-title">Plexa</h5>
-            <p className="card-text d-flex flex-column">
-              <span>A social network for doctors and patients</span>
-              <a href='https://plexa.ai' target="_blank" rel="noopener noreferrer">https://plexa.ai</a>
-
-              <span>
-                <span className="badge bg-success">Ruby on Rails</span>
-                <span className="badge bg-primary mx-1">React Native</span>
-                <span className="badge bg-warning text-dark mx-1">Redux</span>
-                <span className="badge bg-secondary mx-2">Jquery</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card">
-          <img src={grafiq} className="card-img-top" alt="Grafiq project" />
-          <div className="card-body">
-            <h5 className="card-title">Grafiq</h5>
-            <p className="card-text d-flex flex-column">
-              <span>A map of graph connections about family violence perpetrator pathways in Australia</span>
-              <a href='https://grafiq.herokuapp.com/' target="_blank" rel="noopener noreferrer">https://grafiq.herokuapp.com/</a>
-
-              <span>
-                <span className="badge bg-success">Ruby on Rails</span>
-                <span className="badge bg-primary mx-2">Vue.js</span>
-                <span className="badge bg-warning text-dark">Vuex</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="col">
-        <div className="card">
-          <img src={harvester} className="card-img-top" alt="Harvester project" />
-          <div className="card-body">
-            <h5 className="card-title">Harvester</h5>
-            <p className="card-text d-flex flex-column">
-              <span>Crawling reviews from Facebook, Google, Tripadvisor</span>
-              <a href='https://h.reviewpilot.net/' target="_blank" rel="noopener noreferrer">https://h.reviewpilot.net/</a>
-
-              <span>
-                <span className="badge bg-success">Ruby on Rails</span>
-                <span className="badge bg-primary mx-2">Node.js</span>
-                <span className="badge bg-warning text-dark">Puppeteer</span>
-              </span>
-            </p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map((project) => (
+            <div key={project.id} className="group h-full">
+              <div className="relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl h-full flex flex-col">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
+                <div className="relative flex flex-col h-full">
+                  <img
+                    src={project.image}
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105 cursor-pointer"
+                    alt={`${project.title} project`}
+                    onClick={() => openModal(project.image, project.title)}
+                  />
+                  <div className="p-4 bg-white flex flex-col flex-grow">
+                    <h5 className="text-xl font-bold mb-2">{project.title}</h5>
+                    <p className="text-gray-600 mb-2">{project.description}</p>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-purple-600 transition-colors duration-300 block mb-3"
+                    >
+                      {project.url}
+                    </a>
+                    <div className="flex flex-wrap gap-2 mt-auto">
+                      {project.technologies.map((tech, index) => (
+                        <Badge key={`${project.id}-${tech.name}`} color={tech.color}>
+                          {tech.name}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
+      <Modal show={showModal} onClose={() => setShowModal(false)} size="4xl">
+        <ModalHeader>
+          <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
+            {selectedTitle}
+          </span>
+        </ModalHeader>
+        <ModalBody>
+          <div className="flex justify-center">
+            <img
+              src={selectedImage}
+              alt={selectedTitle}
+              className="max-h-[70vh] object-contain"
+            />
+          </div>
+        </ModalBody>
+      </Modal>
     </div>
-    </>
-  )
+  );
 }
