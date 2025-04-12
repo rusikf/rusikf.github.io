@@ -12,7 +12,7 @@ export const About = () => {
               <img
                 src={me}
                 alt='My avatar'
-                className='w-64 h-64 object-cover transition-transform duration-300 hover:scale-105'
+                className='w-32 h-32 sm:w-64 sm:h-64 object-cover transition-transform duration-300 hover:scale-105'
               />
             </div>
           </div>
